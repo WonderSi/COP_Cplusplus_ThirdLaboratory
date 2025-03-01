@@ -49,17 +49,23 @@ cmake_ninja_workdir = C$:/Users/011ko/CLionProjects/COP_Cplusplus_ThirdLaborator
 
 build cmake_object_order_depends_target_COP_Cplusplus_ThirdLaboratory: phony || CMakeFiles/COP_Cplusplus_ThirdLaboratory.dir
 
-build CMakeFiles/COP_Cplusplus_ThirdLaboratory.dir/main.cpp.obj: CXX_COMPILER__COP_Cplusplus_ThirdLaboratory_unscanned_Debug C$:/Users/011ko/CLionProjects/COP_Cplusplus_ThirdLaboratory/main.cpp || cmake_object_order_depends_target_COP_Cplusplus_ThirdLaboratory
-  DEP_FILE = CMakeFiles\COP_Cplusplus_ThirdLaboratory.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\COP_Cplusplus_ThirdLaboratory.dir
-  OBJECT_FILE_DIR = CMakeFiles\COP_Cplusplus_ThirdLaboratory.dir
-
 build CMakeFiles/COP_Cplusplus_ThirdLaboratory.dir/examples/1/main.cpp.obj: CXX_COMPILER__COP_Cplusplus_ThirdLaboratory_unscanned_Debug C$:/Users/011ko/CLionProjects/COP_Cplusplus_ThirdLaboratory/examples/1/main.cpp || cmake_object_order_depends_target_COP_Cplusplus_ThirdLaboratory
   DEP_FILE = CMakeFiles\COP_Cplusplus_ThirdLaboratory.dir\examples\1\main.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\COP_Cplusplus_ThirdLaboratory.dir
   OBJECT_FILE_DIR = CMakeFiles\COP_Cplusplus_ThirdLaboratory.dir\examples\1
+
+build CMakeFiles/COP_Cplusplus_ThirdLaboratory.dir/examples/interfaces.cpp.obj: CXX_COMPILER__COP_Cplusplus_ThirdLaboratory_unscanned_Debug C$:/Users/011ko/CLionProjects/COP_Cplusplus_ThirdLaboratory/examples/interfaces.cpp || cmake_object_order_depends_target_COP_Cplusplus_ThirdLaboratory
+  DEP_FILE = CMakeFiles\COP_Cplusplus_ThirdLaboratory.dir\examples\interfaces.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\COP_Cplusplus_ThirdLaboratory.dir
+  OBJECT_FILE_DIR = CMakeFiles\COP_Cplusplus_ThirdLaboratory.dir\examples
+
+build CMakeFiles/COP_Cplusplus_ThirdLaboratory.dir/examples/main.cpp.obj: CXX_COMPILER__COP_Cplusplus_ThirdLaboratory_unscanned_Debug C$:/Users/011ko/CLionProjects/COP_Cplusplus_ThirdLaboratory/examples/main.cpp || cmake_object_order_depends_target_COP_Cplusplus_ThirdLaboratory
+  DEP_FILE = CMakeFiles\COP_Cplusplus_ThirdLaboratory.dir\examples\main.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\COP_Cplusplus_ThirdLaboratory.dir
+  OBJECT_FILE_DIR = CMakeFiles\COP_Cplusplus_ThirdLaboratory.dir\examples
 
 
 # =============================================================================
@@ -69,7 +75,7 @@ build CMakeFiles/COP_Cplusplus_ThirdLaboratory.dir/examples/1/main.cpp.obj: CXX_
 #############################################
 # Link the executable COP_Cplusplus_ThirdLaboratory.exe
 
-build COP_Cplusplus_ThirdLaboratory.exe: CXX_EXECUTABLE_LINKER__COP_Cplusplus_ThirdLaboratory_Debug CMakeFiles/COP_Cplusplus_ThirdLaboratory.dir/main.cpp.obj CMakeFiles/COP_Cplusplus_ThirdLaboratory.dir/examples/1/main.cpp.obj
+build COP_Cplusplus_ThirdLaboratory.exe: CXX_EXECUTABLE_LINKER__COP_Cplusplus_ThirdLaboratory_Debug CMakeFiles/COP_Cplusplus_ThirdLaboratory.dir/examples/1/main.cpp.obj CMakeFiles/COP_Cplusplus_ThirdLaboratory.dir/examples/interfaces.cpp.obj CMakeFiles/COP_Cplusplus_ThirdLaboratory.dir/examples/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\COP_Cplusplus_ThirdLaboratory.dir
