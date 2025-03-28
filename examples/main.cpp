@@ -19,7 +19,9 @@ int main () {
     IUnknown* pIUnknown = CreateInstance();
 
     cout << "\nКлиент: получить указатель на IX" << endl;
+    // Определяем указатель на интерфейс
     IX* pIX = NULL;
+    // Запрашиваем интерфейс IX
     hr = pIUnknown->QueryInterface(IID_IX, (void**)&pIX);
     if (SUCCEEDED(hr)) {
         cout << "Клиент: указатель на IX успешно получен" << endl;
@@ -54,9 +56,20 @@ int main () {
         cout << "Клиент: невозможно получить указатель на IY через IX" << endl;
     }
 
-    if (pIX) pIX->Release();
-    if (pIY) pIY->Release();
-    if (pIUnknown) pIUnknown->Release();
+    cout << "\nКлиент: получить указатель на IUnknown через IY" << endl;
+    IUnknown *pIUnknownFromIY = NULL;
+    hr = pIY->QueryInterface(IID_IUnknown1, (void **) &pIUnknownFromIY);
+    if (SUCCEEDED(hr)) {
+        cout << "Равны два ли два указателя?" << endl;
+        if (pIUnknownFromIY == pIUnknown) {
+            cout << "ДА" << endl;
+        } else {
+            cout << "НЕТ" << endl;
+        }
+    }
+
+    // Удалить компонент
+    delete pIUnknown;
 
     return 0;
 };
